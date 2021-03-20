@@ -102,9 +102,9 @@ body{
     margin-left: auto;
     padding: auto;
     letter-spacing: 1px;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 2px;
-    border-color: black; 
+    border-color: black;  */
     /* background: rgb(224, 134, 134); */
     color: white; display: flex; justify-content: space-between;
     align-items: center; text-transform: uppercase;
