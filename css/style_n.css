@@ -12,6 +12,11 @@ body{
 	margin: 0px;
 	font-family: 'Lora', serif;
 }
+.ot{
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .weekend h2::before, .weekend h2::after {
     content: "";
     position: absolute;
@@ -171,7 +176,7 @@ main{
 	border-radius: .25rem;
 }
 .btn-big{
-	padding: .rem 1.3rem;
+	padding:  1.3rem;
 	line-height: 1.3rem;
 }
 .footer{
@@ -226,7 +231,7 @@ main{
 	border: none;
 }
 .footer .footer-content .contact .contact-input:focus{
-	background: #lalala;
+	background: #686868;
 }
 .footer .footer-content .contact .contact-btn{
 	float: right;
