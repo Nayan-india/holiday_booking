@@ -1,170 +1,82 @@
 *{
-    
-        margin:0;
-        padding :0;
-        box-sizing: border-box;
-        font-family: 'Josefin Sans', sans-serif;
-    
-}
-
-html{
-    height:100%;
-    background: #f6f6f6;
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Lora', serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', Sans-serif;
 }
 
 body{
-    height:100%;
-    background: #f6f6f6;
-    padding: 0px;
-    margin: 0px;
+    background: #E8C966;
     font-family: 'Lora', serif;
-}
-
-/*--NAVBAR--*/
-nav{
-    width: 100%;
-    height: 15vh;
-    background: rgba(0,0,0,0.2);
-    color: white; display: flex; justify-content: space-between;
-    align-items: center; text-transform: uppercase;
-}
-
-nav .logo{
-    width: 25%; text-align: center;
-
-}
-nav .menu{
-    width: 40%;
-
-    display: flex; justify-content: space-around;
-
-}
-
-nav .menu a{
-    /* width:  25%; */
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-
-}
-
-nav .menu a:first-child{
-    color: #00b894;
-}
-.menu{
-    font-size: 1.3em;
-    width: 40%;
-
-    display: flex; justify-content: space-around;
-    margin-left: auto;
-    padding: auto;
-    letter-spacing: 1px;
-    /* border-style: solid;
-    border-width: 2px;
-    border-color: black;  */
-    /* background: rgb(224, 134, 134); */
-    color: white; display: flex; justify-content: space-between;
-    align-items: center; text-transform: uppercase;
-    text-decoration: none;
-}
-.menu a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
- }
-a:hover{
-    color:black;
-    font-size: 1.5em;
-}
-/*--NAVBAR END--*/
-
-/*--JUMBOTRON AND SIGN IN/UP--*/
-main{
-    width: 100%;
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white;
-}
-section{}
-section h3{
-    font-size: 35px;
-    font-weight: 200;
-    letter-spacing: 3px;
-    text-shadow: 1px 1px 2px black;
-
-
-}
-
-section h1{
-    margin: 30px 0 20px 0;
-    font-size: 55px;
-    font-weight: 700;
-    text-shadow: 2px 1px 5px black;
-    text-transform: uppercase;
-}
-
-section p{
-    font-size: 25px;
-    word-spacing: 2px;
-    margin-bottom: 25px;
-    text-shadow: 1px 1px 1px black;
-
-}
-section a{
-    padding: 12px 30px;
-    border-radius: 4px;
-    outline: none;
-    text-transform: uppercase;
-    font-size: 13px;
-    font-weight: 500;
-    text-decoration: none;
-    letter-spacing: 1px;
-    transition: all .5s ease;
-}
-
-section .btnone{
-    background: #fff;
-    color: #000;
-}
-
-.btnone:hover{
-    background: #00b894;
-    color: white;
-}
-
-.btntwo:hover{
-    background: #fff;
-    color: #000;
-}
-section .btntwo{
-    background: #00b894;
-    color: white;
-}
-.change:after{
-    content:'';
-    animation: changetext 10s infinite linear ;
-    color: #00b894;
+    font-size: 16px;
 }
 
 .container{
-    height: 100vh;
     width: 100%;
+}
+
+/*--NAVBAR--*/
+
+#navbar{
+    width: 100%;
+    height: 125px;
+    background: rgba(0,0,0,0.4);
+    color: white; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    text-transform: uppercase;
+    overflow: hidden;
+}
+#brand{
+    display: none;
+}
+#menu{
+    font-size: 1.3em;
+    float: right; 
+    text-align: center;
+    justify-content: space-around;
+    padding: auto;
+    margin-right: 5%;
+}
+
+#menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#menu ul li{
+    float: left;
+}
+#menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+}
+
+#menu a:hover {
+    background-color: #E8C966;
+    color: #000;
+}
+/*--NAVBAR END--*/
+
+/*--Images And SIGN IN/UP--*/
+#first{
+    width: 100%;
+    height: 80vh;
     background-image: url(../images/img.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    margin-bottom: 10px;  
     transition: 5s;
-
     animation-name: animate;
-    animation-direction: alternate-reverse;
+    animation-direction: alternate;
     animation-duration: 10s;
-    animation-fill-mode:forwards ;
+    animation-fill-mode:forwards;
     animation-iteration-count:infinite ;
     animation-play-state: running ;
     animation-timing-function: ease-in-out ;
@@ -177,98 +89,72 @@ section .btntwo{
     100%{background-image: url(../images/img4.jpg);}
     
 }
-/*--JUMBOTRON AND SIGN IN/UP END--*/
 
-
-.weekend h2::before, .weekend h2::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-top: 1px solid #13aba6;
-    top: 27px;
-    width: 149px;
-}
-.weekend h2{
-    padding: 0px 0px 20px 50px;
+main{
+    width: 100%;
+    margin-top: 10vh;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    color: #0e0f10;
-    line-height: 50px;
-    display: inline-block;
-    position: relative;
-}
-.weekend span{
-    color: #0e0f10;
-    font-size: 17px;
-    line-height: 32px;
-    display: inline-block;
-    margin: 15px 50px 15px 50px;
-    display: block;
-    text-align: center;
-}
-.weekend img{
-    max-width: 100%;
-    height: auto;
-}
-.benefit{
-    display: flex;
-    justify-content: space-around;
-}
-.offer .benefit .traveling-box{
-    width: 255px;
-    height: 360px;
-}
-.offer .benefit .traveling-box h3{
-    font-size: 25px;
-    padding: 25px 0px 20px;
-}
-.offer .benefit .traveling-box p{
-    padding: 17px;
-}
-.offer h2::before, .offer h2::after {
-    content: "";
-    position: absolute;
-    height: 5px;
-    border-top: 1px solid #13aba6;
-    top: 27px;
-    width: 149px;
-}
-.offer h2{
-    padding: 0px 0px 20px 50px;
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    color: #0e0f10;
-    line-height: 50px;
-    display: inline-block;
-    position: relative;
-}
-.offer span{
-    color: #0e0f10;
-    font-size: 17px;
-    line-height: 32px;
-    display: inline-block;
-    margin: 15px 50px 15px 50px;
-    display: block;
-    text-align: center;
-}
-
-.btn{
-    padding: .5rem 1rem;
-    background: #006669;
     color: white;
-    border: 1px solid transparent;
-    border-radius: .25rem;
 }
-.btn-big{
-    padding:  1.3rem;
-    line-height: 1.3rem;
+
+main h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
 }
+
+main h1{
+    margin: 30px 0 20px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+main a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+}
+
+main .btn{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.btn:hover{
+    background: #E8C966;
+    color: #000;
+}
+
+/*--IMAGE AND SIGN IN/UP END--*/
+
+
+
+
+
+
+
+
+
+
+
+/*---FOOTER---*/
 .footer{
     background: #303036;
     color: #d3d3d3;
-    height: 350px;
+    height: 300px;
     position: relative;
     }
 .footer .footer-bottom{
@@ -283,45 +169,227 @@ section .btntwo{
     padding-top: 20px;
 }
 .footer .footer-content{
-    height: 350px;
+    height: 300px;
     display: flex;
+    flex-wrap: wrap;
 }
-.footer .footer-content .footer-section{
+
+.footer-content .footer-section{
     flex: 1;
-    padding: 25px;
+    padding: 20px 20px 20px 40px;
+
 }
-.footer .footer-content .about .contact span{
-    display: block;
-    font-size: 1.1em;
-    margin-bottom: 8px;
+
+.footer-content #address h3{
+    margin-bottom: 10px;
 }
-.footer .footer-content .links ul a{
+.footer-content #address ul{
+    list-style-type: none;
+    display: flex;
+    margin: 30px 5px 5px 0;
+}
+#address ul li{
+    flex: 25%;
+    margin: 10px;
+}
+
+.footer-content #links ul{
+    list-style-type: none;
+    margin-top: 10px; 
+}
+.footer-content #links a{
     display: block;
+    text-decoration: none;
     color: white;
     margin-bottom: 10px;
     font-size: 1.2em;
     transition: all .3s;
 }
-.footer .footer-content .links ul a:hover{
+.footer-content #links a:hover{
     color: white;
     margin-left: 15px;
     transition: all .3s;
 }
-.footer .footer-content .contact .contact-input{
+
+.footer-content #contact{
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    width: 30%;
+}
+.footer-content #contact .contact-input{
     background: #faf9f9;
     color: #333333;
-    width: 450px;
+    width: 100%;
     margin-bottom: 10px;
     line-height: 1.5em;
     padding: .9rem 1.4rem;
     border: none;
 }
-.footer .footer-content .contact .contact-input:focus{
-    background: #686868;
-}
-.footer .footer-content .contact .contact-btn{
+.footer-content #contact .contact-btn{
     float: right;
+    padding: 5px;
 }
-.footer .footer-content .contact h3{
+.footer-content #contact h3{
     font-size: 1.4em;
+}
+
+/*---FOOTER END---*/
+
+
+
+/*---MEDIA QUERIES---*/
+
+/*---Extra Large Devices---*/
+@media (min-width: 1200px){
+    /*--Navbar--*/
+    #logo{
+        background: url(../images/logo-large.jpg) no-repeat;
+        width: 115px;
+        height: 120px;
+        margin: 10px 15px 0px 20px;
+    }
+    #navbar > a{
+        float: left;
+    }
+    #navbar > #brand {
+        float: left;
+    }
+    /*--Navbar End--*/
+
+}
+
+/*---Large Devices---*/
+@media (min-width: 992px) and (max-width: 1199px){
+    /*--Navbar--*/
+    #logo{
+        background: url(../images/logo-large.jpg) no-repeat;
+        width: 115px;
+        height: 120px;
+        margin: 10px 15px 0px 20px;
+    }
+
+    #navbar > a{
+        float: left;
+    }
+    #navbar > #brand {
+        float: left;
+    }
+    /*--Navbar End--*/
+
+}
+
+/*---Medium Devices---*/
+@media (min-width: 748px) and (max-width: 991px){
+    /*--Navbar--*/
+    #navbar {
+        height: 100px;
+    }
+    #logo{
+        background: url(../images/logo-med.jpg) no-repeat;
+        width: 80px;
+        height: 80px;
+        margin: 10px 15px 0px 20px;
+    }
+    /*--Navbar End--*/
+
+}
+
+/*---Small Devices---*/
+@media (min-width: 576px) and (max-width: 747px){
+    /*--Navbar--*/
+    #navbar {
+        height: 15vw;
+    }
+    #brand{
+        display: block;
+        font-family: 'Dancing Script', cursive;
+        color: #E8C966;
+        font-weight: bold;
+        font-size: 2em;
+        text-transform: none;
+        margin-left: 10px;
+    }
+    #menu{
+        float: none;
+        font-size: 1em;
+    }
+    /*--Navbar End--*/
+
+
+
+
+    /*--Footer--*/
+    .footer{
+        height: 500px;
+    }
+    .footer .footer-content #address{
+        flex: 50%;
+    }
+    .footer .footer-content #links{
+        flex: 50%;
+    }
+    .footer .footer-content #contact{
+        flex: 100%;
+    }
+    /*--Footer End--*/
+
+}
+/*---Extra Small Devices*/
+@media (max-width: 575px){
+    /*--Navbar--*/
+    #navbar {
+        height: 15vw;
+        align-content: center;
+    }
+    #menu{
+        float: none;
+        font-size: 3vw;
+        margin: auto;
+    }
+    #menu a{
+        margin: 1vw;
+        padding: 10px;
+    }
+
+    #first{
+        height: 60vh;
+    }
+    main {
+        margin-top: 20vh;
+    }
+    main h3{
+        font-size: 18px;
+    }
+    main h1{
+        font-size: 26px;
+        margin: 15px 0 25px 0;
+    }
+    main a {
+        font-size: 10px;
+        padding: 8px 20px;
+    }
+    /*--Navbar End--*/
+
+
+
+    /*--Footer--*/
+    .footer{
+        height: 700px;
+        text-align: center;
+    }
+    .footer .footer-content hr{
+        display: block;
+    }
+    .footer .footer-content .footer-section{
+        flex: 100%;
+    }
+    .footer-content #address ul{
+        display: flex;
+    }
+    #address ul li{
+        flex: 25%;
+    }
+    /*--Footer End--*/
+
 }

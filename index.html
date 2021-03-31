@@ -8,132 +8,86 @@
 	<link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-
-    <div class="container">
+    <div id="first" class="container">
         <!-- Navigation Bar -->
-        <nav>
-            <div class="logo">
-                
-            </div>
-            <div class="brand">
-                
-            </div>
+        <header>
+        <nav id="navbar">
+            <a href="index.html">
+                <div id="logo"></div>
+            </a>
 
-            <div class="menu">
-                <a href="/this">Home</a>
-                <a href="about.html">About</a>
-                <a href="/this">Travel</a>
-                <a href="/this">Contact us</a> 
+            <div id="brand">TravelEasy</div>
+
+            <div id="menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#offers">Travel</a></li>
+                  <li><a href="#cont">Contact us</a></li>
+                </ul>
             </div>
         </nav>
+        </header>
         <!-- Navigation Bar End -->
-        <!-- Jumbotron Background Image and Sign up/in -->
+
+        <!-- <div id="phone">Enquire<span>(Call us*)</span></div> --><!-- to be implemented using Javascript -->
+
+        <!-- Background Image and Sign up/in -->
         <main>
             <section>
-                <h3> Welcome to TravelEasy </h3>
-                <h1> Do Come and Visit <span class="change"></span> </h1>
-                <p> "Keep Calm and Travel on "</p>
-                <a href="SignUp.html" class="btnone">Sign Up</a>
-                <a href="Login.html" class="btntwo">Log In</a>
-                
+                <h3>Welcome to TravelEasy</h3>
+                <h1>Do Come and Visit</h1>
+                <a href="Login.html" class="btn">Log In</a>
+                <a href="SignUp.html" class="btn">Sign Up</a>    
             </section>
         </main>
-        <!-- Jumbotron Background Image and Sign up/in End-->
+        <!-- Background Image and Sign up/in End-->
     </div>
+    <!-- First Container Ends -->
 
 
-    <!-- Travel Offers 6 clickable Cards -->
-    <div class="ot">
-        <table>
-           <tr>
-            <td><img src="images/trav1.png"></td>
-            <td><img src="images/trav1.png"></td>
-            <td><img src="images/trav1.png"></td>
-           </tr>
-            <tr>
-                <td><img src="images/trav1.png"></td>
-                <td><img src="images/trav1.png"></td>
-                <td><img src="images/trav1.png"></td>
-            </tr>
-        </table>
+    <!-- 8 Travel Offers clickable Cards -->
+    <div id="offers" class="container">
+        
     </div>
-    <!-- End of Travel Offer -->
+    <h2>SELECT OFFERS FOR TRAVELLING</h2>
+    <!-- End of Travel Offer cards -->
 
-	<div class="offer">
-	<!-- temporary line breaks -></-->
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		<h2>SELECT OFFERS FOR TRAVELLING</h2>
-		<span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</span>
-		<div class="benefit">
-			<div class="traveling-box">
-                     <i><img src="images/travel-icon.png" alt="icon"/></i>
-                     <h3>Different Countrys</h3>
-                     <p> going to use a passage of Lorem Ipsum, you need to be </p>
-                     <div class="read-more">
-                        <a  href="#">Read More</a>
-                     </div>
-            </div>  
-			<div class="traveling-box">
-                     <i><img src="images/travel-icon2.png" alt="icon"/></i>
-                     <h3>Mountains Tours</h3>
-                     <p> going to use a passage of Lorem Ipsum, you need to be </p>
-                     <div class="read-more">
-                        <a  href="#">Read More</a>
-                     </div>
-            </div>
-			<div class="traveling-box">
-                     <i><img src="images/travel-icon3.png" alt="icon"/></i>
-                     <h3>Bus Tours</h3>
-                     <p> going to use a passage of Lorem Ipsum, you need to be </p>
-                     <div class="read-more">
-                        <a  href="#">Read More</a>
-                     </div>
-            </div>
-			<div class="traveling-box">
-                     <i><img src="images/travel-icon4.png" alt="icon"/></i>
-                     <h3>Summer Rest</h3>
-                     <p> going to use a passage of Lorem Ipsum, you need to be </p>
-                     <div class="read-more">
-                        <a  href="#">Read More</a>
-                     </div>
-            </div>
-		</div>
-	</div>
-	<div class="weekend">
-		<h2>WEEKEND IN NEW YORK, LONDON</h2>
-		<span>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</span>
-		<img src="images/London.jpg" alt="img">
-	</div>
-	<!-- temporary line breaks -></-->
-	<br><br><br><br><br>
+
+
+
+
+
+
+	<!-- Footer Starts -->
 	<footer class="footer">
 		<div class="footer-content">
-			<div class="footer-section address">
+			<div id="address" class="footer-section">
 			 <h3>CONTACT US</h3>
-                        <span>123 Second Street Fifth <br>Avenue,<br>
-                        Manhattan, New York<br>
-                        +987 654 3210</span>
-				<ul class="location_icon">
+                        <span>TravelEasy, 5th Floor <br>UB tower,<br>Poata, Jodhpur (342003)<br>+997 755 3310</span>
+				<ul class="social-media">
 					<li> <a href="#"><img src="images/facebook.png"></a></li>
 					<li> <a href="#"><img src="images/Twitter.png"></a></li>
 					<li> <a href="#"><img src="images/linkedin.png"></a></li>
 					<li> <a href="#"><img src="images/instagram.png"></a></li>
-				 </ul>
+				</ul>
 			</div>
-			<div class="footer-section links">
+			<div id="links" class="footer-section">
 				<h3>ADDITIONAL LINKS</h3>
                         <ul class="link">
                            <li> <a href="#">About us</a></li>
                            <li> <a href="#">Terms and conditions</a></li>
-                           <li> <a href="#"> Privacy policy</a></li>
+                           <li> <a href="#">Privacy policy</a></li>
                            <li> <a href="#">News</a></li>
-                           <li> <a href="#"> Contact us</a></li>
+                           <li> <a href="#">Contact us</a></li>
                         </ul>
 			</div>
-			<div class="footer-section contact">
+			<div id="contact" class="footer-section">
 			 <h3> Contact</h3>
              <br>
 			 <form action="index.html" method="post">
