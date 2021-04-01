@@ -49,12 +49,12 @@ body{
 #menu ul li{
     float: left;
 }
-#menu a{
+#menu li a{
     display: block;
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 15px;
+    padding: 45px 15px; 
 }
 
 #menu a:hover {
@@ -67,11 +67,12 @@ body{
 #first{
     width: 100%;
     height: 80vh;
+    text-align: center;
     background-image: url(../images/img.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 10px;  
+    padding-bottom: 10px;  
     transition: 5s;
     animation-name: animate;
     animation-direction: alternate;
@@ -134,15 +135,75 @@ main .btn{
     color: #fff;
 }
 .btn:hover{
-    background: #E8C966;
+    background: #ffbf00;
     color: #000;
 }
 
 /*--IMAGE AND SIGN IN/UP END--*/
 
+/*---Offers Cards---*/
+.headline {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-shadow: 1px 2px;
+    background: rgba(255,191,0,0.3);
+}
 
+.cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.cards {
+    height: 350px;
+    border-radius: 10px;
+    margin: 15px;
+    text-align: center;
+    background-color: #1a1300;
+    transition: .5s;
+}
+.cards .card-img {
+    height: 175px;
+}
+.cards .card-img div{
+    border-radius: 10px 10px 0 0;
+    padding-top: 5px;
+    text-transform: uppercase;
+    color: #ffbf00;
+    background: rgba(0,0,0,0.4);
+}
+.cards .content {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffbf00;
+    height: 130px;
+}
+.cards .price-tag {
+    height: 45px;
+    padding-top: 15px;
+    background-color: #00e6ac;
+    border-radius:0 0 10px 10px;
+}
+.cards .price-tag span{
+    font-size: 1.3em;
+}
+.cards:hover {
+    transform: scale(1.1, 1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+    cursor: default;
+}
+.cards a{
+    text-decoration: none;
+    color: #000;
 
+}
 
+/*---Offers Cards End---*/
 
 
 
@@ -173,10 +234,13 @@ main .btn{
     display: flex;
     flex-wrap: wrap;
 }
+.footer-content hr{
+    display: none;
+}
 
 .footer-content .footer-section{
     flex: 1;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 20px 20px 20px;
 
 }
 
@@ -190,7 +254,6 @@ main .btn{
 }
 #address ul li{
     flex: 25%;
-    margin: 10px;
 }
 
 .footer-content #links ul{
@@ -233,6 +296,11 @@ main .btn{
 .footer-content #contact h3{
     font-size: 1.4em;
 }
+/*--Phone--*/
+.footer-content #phone{
+    display: none;
+}
+/*--Phone End--*/
 
 /*---FOOTER END---*/
 
@@ -257,6 +325,14 @@ main .btn{
     }
     /*--Navbar End--*/
 
+    /*---Offers Cards---*/
+    .cards {
+        width: 20%;
+        flex: 1fr 1fr 1fr 1fr;
+    }
+    /*---Offers Cards End---*/
+
+
 }
 
 /*---Large Devices---*/
@@ -277,6 +353,13 @@ main .btn{
     }
     /*--Navbar End--*/
 
+    /*---Offers Cards---*/
+    .cards {
+        width: 20%;
+        flex: 1fr 1fr 1fr 1fr;
+    }
+    /*---Offers Cards End---*/
+
 }
 
 /*---Medium Devices---*/
@@ -293,6 +376,13 @@ main .btn{
     }
     /*--Navbar End--*/
 
+    /*---Offers Cards---*/
+    .cards {
+        width: 40%;
+        flex: 1fr 1fr;
+    }
+    /*---Offers Cards End---*/
+
 }
 
 /*---Small Devices---*/
@@ -300,6 +390,9 @@ main .btn{
     /*--Navbar--*/
     #navbar {
         height: 15vw;
+    }
+    #navbar a{
+        text-decoration: none;
     }
     #brand{
         display: block;
@@ -316,12 +409,18 @@ main .btn{
     }
     /*--Navbar End--*/
 
+    /*---Offers Cards---*/
+    .cards {
+        width: 40%;
+        flex: 1fr 1fr;
+    }
+    /*---Offers Cards End---*/
 
 
 
     /*--Footer--*/
     .footer{
-        height: 500px;
+        height: 550px;
     }
     .footer .footer-content #address{
         flex: 50%;
@@ -347,16 +446,15 @@ main .btn{
         font-size: 3vw;
         margin: auto;
     }
-    #menu a{
-        margin: 1vw;
-        padding: 10px;
+    #menu li a{
+        padding: 6vw 10px;
     }
 
     #first{
         height: 60vh;
     }
     main {
-        margin-top: 20vh;
+        margin-top: 15vh;
     }
     main h3{
         font-size: 18px;
@@ -370,26 +468,60 @@ main .btn{
         padding: 8px 20px;
     }
     /*--Navbar End--*/
-
-
+    
+    /*---Offers Cards---*/
+    .cards {
+        width: 70%;
+        flex: 1fr;
+    }
+    /*---Offers Cards End---*/
 
     /*--Footer--*/
     .footer{
-        height: 700px;
+        height: 600px;
         text-align: center;
     }
     .footer .footer-content hr{
         display: block;
+        width: 70%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 15%;
+        margin-left: 15%;
     }
     .footer .footer-content .footer-section{
         flex: 100%;
+        margin-top: 10px;
     }
     .footer-content #address ul{
         display: flex;
     }
-    #address ul li{
+    .footer-content #address ul li{
         flex: 25%;
     }
+    .footer-content #contact{
+        display: none;
+    }
+    /*--Phone--*/
+    .footer-content a{
+        text-decoration: none;
+        flex: 100%;
+    }
+    .footer-content a #phone{
+        display: block;
+        align-content: center;
+        color: black;
+        margin: 20px 10%;
+        padding: 5px;
+        border: 1px solid black;
+        background-color: #E8C966;
+        border-radius: 3px;
+        box-shadow: 0 1px black;
+    }
+    .footer-content a #phone span{
+        font-size: .7em;
+    }
+    /*--Phone End--*/
     /*--Footer End--*/
 
 }
